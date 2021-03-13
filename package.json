@@ -1,0 +1,12 @@
+{
+  "name": "cloud-run-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "build": "gcloud builds submit --tag gcr.io/cloud-run-test-307513/cloud-run-test",
+    "deploy": "gcloud run deploy --image gcr.io/cloud-run-test-307513/cloud-run-test --platform managed"
+  },
+  "author": "",
+  "license": "ISC"
+}
